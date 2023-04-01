@@ -1,15 +1,21 @@
-import Image from 'next/image'
-import React from 'react'
-//
-import { logo } from '@config/constants'
+import Image from "next/image";
+import { logo } from "@config/constants";
+import Link from "next/link";
 
-
-const Brand = () => {
+const Brand = ({ type }: any) => {
   return (
-    <div className='max-w-[140px]' >
-      <Image src={logo} width={1} height={.220} layout='responsive' />  
+    <div className="max-w-[140px]">
+      <Link href={"/"}>
+        <Image
+          src={type === "light" ? logo[0] : logo[1]}
+          alt="logo"
+          width={230}
+          height={250}
+          className="cursor-pointer "
+        />
+      </Link>
     </div>
-  )
-}
+  );
+};
 
-export default Brand
+export default Brand;

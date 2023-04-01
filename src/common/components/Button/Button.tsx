@@ -1,3 +1,24 @@
+import { ButtonProps } from "@config/types";
+
+export default function Button(props: ButtonProps) {
+  const { text, styles, secondary, href } = props;
+
+  return (
+    <a href={href}>
+      <button
+        className={`text-lg rounded-full px-[40px] py-[20px] font-medium  ${
+          secondary
+            ? "bg-light text-dark border-2 border-dark hover:bg-dark hover:text-light"
+            : "bg-dark text-light hover:-translate-y-2 smooth"
+        } ${styles}`}
+      >
+        {text || "This is a button"}
+      </button>
+    </a>
+  );
+}
+
+/*
 import React, { FC } from "react";
 import Link from "next/link";
 //
@@ -99,3 +120,5 @@ const Button: FC<ButtonProps> = ({
 };
 
 export default Button;
+
+*/

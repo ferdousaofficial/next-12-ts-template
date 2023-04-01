@@ -4,26 +4,27 @@ import { ReactElement, ReactNode, ButtonHTMLAttributes } from "react";
 
 // _app page layout
 export type AppPropsWithLayout = AppProps & {
-    Component: NextPage & {
-        getLayout?: (page: ReactElement) => ReactNode;
-    };
+  Component: NextPage & {
+    getLayout?: (page: ReactElement) => ReactNode;
+  };
 };
-
 
 // button props
 export type ButtonProps = {
-    className?: string;
-    translate?: string;
-    sizeClass?: string;
-    fontSize?: string;
-    //
-    loading?: boolean;
-    disabled?: boolean;
-    secondary?: boolean;
-    type?: ButtonHTMLAttributes<HTMLButtonElement>["type"];
-    href?: string;
-    targetBlank?: boolean;
-    onClick?: () => void;
-    children?: ReactNode;
-    icon ?: string;
-}
+  className?: string;
+  translate?: string;
+  sizeClass?: string;
+  fontSize?: string;
+  //
+  loading?: boolean;
+  disabled?: boolean;
+  secondary?: boolean;
+  type?: ButtonHTMLAttributes<HTMLButtonElement>["type"];
+  href?: string;
+  targetBlank?: boolean;
+  onClick?: () => void;
+  children?: string;
+  icon?: string;
+  styles?: string;
+  text:string
+};

@@ -1,22 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{js,ts,jsx,tsx}"],
-    theme: {
-        extend: {
-            colors: {
-                primary: "#4A5AFF",
-                "light-gradient" : "linear-gradient('#111827', '#4A5AFF')",
-                "dark-gradient" : "linear-gradient('#414FDA', '#FFFFFF')",
-            },
-            fontFamily: {
-                primary: ["Inter", "sans-serif"],
-                graphik: ["Graphik", "sans-serif"],
-            },
-        },
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: { dark: "#0F0F0F", lightgray: "#f1f3f5", light: "#fff" },
+      fontFamily: {
+        primary: ["Gordita", "sans-serif"],
+      },
     },
-    plugins: [
-        require("@tailwindcss/aspect-ratio"),
-        require("@tailwindcss/line-clamp"),
-    ],
-    darkMode: "class",
+  },
+  plugins: [],
+  darkMode: "class",
 };

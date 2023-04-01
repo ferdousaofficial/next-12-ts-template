@@ -1,9 +1,9 @@
-import React from 'react'
+import FooterNavItem from "@components/FooterNavItem/FooterNavItem";
 
-const Home = () => {
+export default function Home() {
   return (
-    <div>Home</div>
-  )
+    <div>
+      <FooterNavItem />
+    </div>
+  );
 }
-
-export default Home

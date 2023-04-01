@@ -4,4 +4,4 @@ import classNames from "classnames";
 export const cx = classNames;
 
 // brand image
-export const logo = "/images/global/airebix.png";
+export const logo = ["/img/logo/logo-light.png", "/img/logo/logo-dark.png"];

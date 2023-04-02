@@ -1,9 +1,15 @@
-import FooterNavItem from "@components/FooterNavItem/FooterNavItem";
+import CounterSection from "./CounterSection/CounterSection";
+import FeatureSection from "./FeatureSection/FeatureSection";
+import PriceSection from "./PriceSection/PriceSection";
+import VideoSection from "./VideoSection/VideoSection";
 
 export default function Home() {
   return (
-    <div>
-      <FooterNavItem />
-    </div>
+    <>
+      <FeatureSection />
+      <PriceSection />
+      <VideoSection />
+      <CounterSection />
+    </>
   );
 }

@@ -9,6 +9,7 @@ export default function GroupText(props: any) {
     paragraphStyles,
     btnText,
     btn,
+    btnStyles,
   } = props;
 
   return (
@@ -18,10 +19,12 @@ export default function GroupText(props: any) {
       >
         {header}
       </h2>
-      <p className={`xl:w-[28%] md:w-1/2 w-[310px] capitalize ${paragraphStyles}`}>
+      <p
+        className={`xl:w-[28%] md:w-1/2 w-[310px] capitalize ${paragraphStyles}`}
+      >
         {paragraph}
       </p>
-      {btn && <Button text={btnText} />}
+      {btn && <Button text={btnText} styles={btnStyles} />}
     </div>
   );
 }

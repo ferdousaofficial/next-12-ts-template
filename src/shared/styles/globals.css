@@ -1,30 +1,22 @@
-/* import by font face */
 @font-face {
-  font-family: "Graphik";
-  src: url("/public/fonts/graphik/GraphikRegular.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: Gordita, sans-serif;
+  src: url("/public/fonts/Gordita-Font/Gordita-Regular.otf");
+  font-weight: 500;
 }
-@font-face {
-  font-family: "Graphik";
-  src: url("/public/fonts/graphik/GraphikBold.otf") format("truetype");
-  font-weight: bold;
-  font-style: bold;
-}
-@font-face {
-  font-family: "Graphik";
-  src: url("/public/fonts/graphik/GraphikLight.otf") format("truetype");
-  font-weight: lighter;
-  font-style: lighter;
-}
-@font-face {
-  font-family: "Graphik";
-  src: url("/public/fonts/graphik/GraphikMedium.otf") format("truetype");
-  font-weight: medium;
-  font-style: medium;
-}
-/* import by font face */
 
+@font-face {
+  font-family: Gordita, sans-serif;
+  src: url("/public/fonts/Gordita-Font/Gordita-Medium.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Gordita, sans-serif;
+  src: url("/public/fonts/Gordita-Font/Gordita-Bold.otf");
+  font-weight: 700;
+}
+
+/* main code */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,7 +27,7 @@
   }
 
   .container {
-    @apply max-w-[1440px] mx-auto;
+    @apply max-w-[1440px] mx-auto ;
   }
   .smooth {
     @apply transition-all ease-in-out duration-300;

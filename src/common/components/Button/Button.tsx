@@ -6,10 +6,10 @@ export default function Button(props: ButtonProps) {
   return (
     <a href={href}>
       <button
-        className={`text-lg rounded-full px-[40px] py-[20px] font-medium  ${
+        className={`text-lg rounded-full px-[40px] py-[20px] font-medium smooth ${
           secondary
-            ? "bg-light text-dark border-2 border-dark hover:bg-dark hover:text-light"
-            : "bg-dark text-light hover:-translate-y-2 smooth"
+            ? "bg-light text-dark border border-dark hover:bg-dark hover:text-light"
+            : "bg-dark text-light hover:-translate-y-2 "
         } ${styles}`}
       >
         {text || "This is a button"}

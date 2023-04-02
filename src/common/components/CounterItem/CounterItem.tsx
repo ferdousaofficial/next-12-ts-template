@@ -7,18 +7,21 @@ export default function CounterItem({ counterText, subtext, limit }: any) {
   useEffect(() => {
     const interval = setInterval(
       () => count < limit && setCount(count + 1),
-      limit > 1000 ? 100 : 20 // limit is the actual number
+      limit < 1000 ? 40 : 1 // limit is the actual number
     );
 
     return () => clearInterval(interval);
-  }, [count]);
+  }, [count, limit]);
 
   return (
-    <GroupText
-      styles="text-center"
-      header={` ${count} ${counterText || ""}`}
-      paragraph={subtext || "give the counter subtext"}
-      paragraphStyles="mx-auto"
-    />
+    <div className="lg:w-1/4 md:w-[45%] w-11/12">
+      <GroupText
+        styles="text-center"
+        header={` ${count} ${counterText || ""}`}
+        paragraph={subtext || "give the counter subtext"}
+        paragraphStyles="mx-auto !w-full"
+        headerStyles="!pb-0 !md:text-[48px] !font-bold !text-[38px]"
+      />
+    </div>
   );
 }

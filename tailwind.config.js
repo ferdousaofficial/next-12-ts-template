@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: { dark: "#0F0F0F", lightgray: "#f1f3f5", light: "#fff" },
       fontFamily: {
-        primary: ["Gordita", "sans-serif"],
+        primary: ["Gordita, ", "sans-serif"],
       },
     },
   },
